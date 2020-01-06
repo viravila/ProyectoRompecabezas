@@ -1,0 +1,172 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 92%;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 1px 0;
+  animation: fadein 4s;
+}
+li::before {
+  content: "• ";
+  color: rgb(72, 116, 106);
+}
+
+
+#contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  font-family:'BioRhyme', serif;
+  color: #6D9B91;
+}
+
+#instrucciones, #objetivo p{
+  font-size: 18px;
+  font-family:  'Space Mono', monospace;
+  color: rgb(36, 36, 36); 
+}
+
+#lista-instrucciones {
+  font-size: 15px;
+}
+
+.col-40, .col-60 {
+  margin: 0;
+  vertical-align: top;
+}
+
+
+.piezasGeneral{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.col-40 {
+  background: #FFF;
+  padding: 18px;
+  width: 40%;
+  color: #000;
+}
+
+.col-60 {
+  background: #6D9B91;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.piezasGeneral div{
+  width: 33%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.piezasGeneral div img {
+  width: 100%;
+  height: auto;
+
+}
+
+#imagenfinal {
+  width: 50%;
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+#imagenGanadora {
+  box-shadow: 10px 10px 5px rgb(53, 53, 53);
+  width: 100%;
+}
+
+#cartelGanador {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.cartel-content {
+  margin: 2% auto; 
+  padding: 10px;
+  width: 80%; 
+}
+
+.close {
+  color: rgb(221, 221, 221);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#padding-button{
+  padding: 3%;
+}
+#reinicio {
+  border-radius: 4px;
+  background-color: #6D9B91;
+  border: none;
+  color: white;
+  padding: 5px 7px;
+  font-family:'BioRhyme', serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
